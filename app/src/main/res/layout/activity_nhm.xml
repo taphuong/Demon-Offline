@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/mau_cam"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Thông tin nhà hàng-->
+    <LinearLayout
+        android:id="@+id/ll_ttnh"
+        android:background="@drawable/custom_background"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/mau_trang"
+            android:layout_weight="3"
+            android:text="THÔNG TIN NHÀ HÀNG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:inputType="text"
+            android:maxLines="1"
+            android:id="@+id/edit_tennh"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="10dp"
+            android:background="@color/mau_trang"
+            android:hint="@string/ten_nh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:inputType="text"
+            android:maxLines="1"
+            android:id="@+id/edit_diachinh"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="10dp"
+            android:background="@color/mau_trang"
+            android:hint="@string/diachi_nh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <!--Thông tin cá nhân-->
+    <LinearLayout
+        android:id="@+id/ll_ttcn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_ttnh"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/custom_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="THÔNG TIN CÁ NHÂN"
+            android:textColor="@color/mau_trang" />
+
+        <EditText
+            android:inputType="text"
+            android:maxLines="1"
+            android:id="@+id/edit_hotennh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/mau_trang"
+            android:hint="@string/ten_chu"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:inputType="number"
+            android:maxLines="1"
+            android:id="@+id/edit_cmndnh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/mau_trang"
+            android:hint="@string/cmnd_chu"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:inputType="text"
+            android:maxLines="1"
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/mau_trang"
+            android:hint="@string/email_chu"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+    <!--Thông tin đăng nhập-->
+    <LinearLayout
+        android:layout_below="@id/ll_ttcn"
+        android:id="@+id/ll_ttdn"
+        android:background="@drawable/custom_background"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/mau_trang"
+            android:layout_weight="3"
+            android:text="THÔNG TIN ĐĂNG NHẬP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:maxLines="1"
+            android:inputType="number"
+            android:id="@+id/edit_sdt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="10dp"
+            android:background="@color/mau_trang"
+            android:hint="@string/sdt_chu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:maxLines="1"
+            android:id="@+id/edit_matkhaunh"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/mau_trang"
+            android:hint="@string/matkhau_dn"
+            android:paddingLeft="10dp" />
+        <EditText
+            android:maxLines="1"
+            android:id="@+id/edit_matkhaunh2"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/mau_trang"
+            android:hint="@string/matkhau2_dn"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/ll_dangky"
+        android:layout_below="@id/ll_ttdn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_dangky"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/dangky"
+            android:textColor="@color/mau_trang"
+            android:background="@color/mau_do"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

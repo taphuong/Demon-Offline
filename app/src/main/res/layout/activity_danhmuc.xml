@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mau_cam">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textStyle="bold"
+        android:text="MÓN ĂN MỚI"
+        android:textColor="@color/mau_trang" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <EditText
+                android:enabled="false"
+                android:singleLine="true"
+                android:layout_weight="8.5"
+                android:gravity="center"
+                android:id="@+id/edit_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@color/mau_trang"
+                android:hint="STT" />
+            <EditText
+                android:singleLine="true"
+                android:layout_weight="1.5"
+                android:id="@+id/edit_tenmon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/mau_trang"
+                android:hint="Tên món ăn (uống)"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:singleLine="true"
+            android:layout_weight="4"
+            android:id="@+id/edit_nguyenlieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/mau_trang"
+            android:hint="Nguyên liệu"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="5dp"/>
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/edit_dongia"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/mau_trang"
+            android:hint="Đơn giá"
+            android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:layout_marginRight="5dp"
+                android:enabled="true"
+                android:id="@+id/btn_them"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:background="@color/mau_do"
+                android:textColor="@color/mau_trang"
+                android:text="Thêm"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"/>
+            <Button
+                android:layout_marginLeft="5dp"
+                android:enabled="false"
+                android:id="@+id/btn_capnhat"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:background="@color/mau_do"
+                android:textColor="@color/mau_trang"
+                android:text="Cập nhật"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<com.baoyz.swipemenulistview.SwipeMenuListView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/lv_danhmuc"-->
+            <!--android:background="@color/mau_trang">-->
+        <!--</com.baoyz.swipemenulistview.SwipeMenuListView>-->
+        <ListView
+            android:paddingTop="1dp"
+            android:background="@color/mau_trang"
+            android:id="@+id/lv_danhmuc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>
